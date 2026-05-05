@@ -1,7 +1,9 @@
-# 🤘 Metal Analytics Pipeline
+# 🤘 Metal Analytics Pipeline 🤘
 
 An end-to-end data engineering project exploring the global 
-metal music scene — from band origins to audio DNA.
+metal music scene from band origins to audio DNA lml!.
+
+<br>
 
 ## 🏗️ Architecture
 
@@ -20,6 +22,8 @@ Metal-Archives + Spotify API → Bronze → Silver → Gold → Tableau
 | Version Control | GitHub |
 | Data Sources | Metal-Archives + Spotify API |
 
+<br>
+
 ## 🎸 Business Questions Answered
 
 - Which countries dominate each metal subgenre?
@@ -28,11 +32,15 @@ Metal-Archives + Spotify API → Bronze → Silver → Gold → Tableau
 - Which labels shaped the metal scene the most?
 - Is the global metal scene growing or shrinking?
 
+<br>
+
 ## 🥉🥈🥇 Medallion Architecture
 
 - **Bronze** — Raw data from Metal-Archives & Spotify API
 - **Silver** — Cleaned, typed, enriched Delta Tables
 - **Gold** — Business-ready aggregations powering the dashboard
+
+<br>
 
 ## 📁 Project Structure
 
@@ -40,9 +48,13 @@ Metal-Archives + Spotify API → Bronze → Silver → Gold → Tableau
     dbt/           # dbt models and data quality tests
     dashboard/     # Tableau screenshots and public link
 
+<br>
+
 ## 🔗 Live Dashboard
 
 [View on Tableau Public](#)
+
+<br>
 
 ## 📦 Data Sources
 

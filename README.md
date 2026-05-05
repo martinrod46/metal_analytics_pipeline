@@ -7,6 +7,8 @@ metal music scene — from band origins to audio DNA.
 
 Metal-Archives + Spotify API → Bronze → Silver → Gold → Tableau
 
+<br>
+
 ## 🛠️ Tech Stack
 
 | Layer | Tool |

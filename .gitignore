@@ -30,3 +30,5 @@ dbt/.user.yml
 # OS files
 .DS_Store
 Thumbs.db
+
+**/02_bronze_spotify*

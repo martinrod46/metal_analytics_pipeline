@@ -3,11 +3,18 @@
 An end-to-end data engineering project exploring the global 
 metal music scene from band origins to audio DNA lml!.
 
+> Data is pulled automatically via the Last.fm API.
+> No manual datasets required. 
+
+The pipeline discovers:
+> top artists per genre dynamically based on real
+> community listening data.
+
 <br>
 
 ## 🏗️ Architecture
 
-Metal-Archives + Spotify API → Bronze → Silver → Gold → Tableau
+Metal-Archives + Last.fm API → Bronze → Silver → Gold → Tableau
 
 <br>
 
@@ -20,17 +27,19 @@ Metal-Archives + Spotify API → Bronze → Silver → Gold → Tableau
 | Storage | Delta Lake (Unity Catalog) |
 | Visualization | Tableau Public |
 | Version Control | GitHub |
-| Data Sources | Metal-Archives + Spotify API |
+| Data Sources | Metal-Archives + Last.fm API |
 
 <br>
 
 ## 🎸 Business Questions Answered
 
-- Which countries dominate each metal subgenre?
-- What was the golden decade for Death, Black and Thrash Metal?
-- What do audio features reveal about subgenre differences?
-- Which labels shaped the metal scene the most?
-- Is the global metal scene growing or shrinking?
+- Which metal subgenres have the most global listeners?
+- What is the loyalty score of each subgenre? (playcount/listeners)
+- Which bands are most similar to each other across subgenres?
+- Which subgenres produce the most cross-genre artists?
+- Which metal albums have the highest playcount globally?
+- How does popularity differ between underground and mainstream metal?
+- Which subgenres are growing vs declining in global listenership?
 
 <br>
 
@@ -56,7 +65,19 @@ Metal-Archives + Spotify API → Bronze → Silver → Gold → Tableau
 
 <br>
 
+## 📊 Dataset Scale
+
+| Dataset | Records |
+|---|---|
+| Tracks | 12,834 |
+| Artists | 1,286 |
+| Similar Artist Relationships | 6,414 |
+| Albums | 6,387 |
+| Metal Subgenres | 30 |
+
+<br>
+
 ## 📦 Data Sources
 
 - [Encyclopaedia Metallum](https://www.metal-archives.com)
-- [Spotify Web API](https://developer.spotify.com)
+- [Last.fm API](https://www.last.fm/api)

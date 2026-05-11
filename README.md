@@ -45,7 +45,7 @@ Metal-Archives + Last.fm API → Bronze → Silver → Gold → Tableau
 
 ## 🥉🥈🥇 Medallion Architecture
 
-- **Bronze** — Raw data from Metal-Archives & Spotify API
+- **Bronze** — Raw data from Metal-Archives & Last.fm API
 - **Silver** — Cleaned, typed, enriched Delta Tables
 - **Gold** — Business-ready aggregations powering the dashboard
 
